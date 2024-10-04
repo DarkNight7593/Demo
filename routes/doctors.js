@@ -5,10 +5,10 @@ const { Pool } = require('pg');
 // Configuración de la conexión a PostgreSQL
 const pool = new Pool({
     user: 'postgres',
-    host: 'localhost',
+    host: '107.22.167.68',
     database: 'hospital',
-    password: 'postgres',
-    port: 5432, // El puerto por defecto de PostgreSQL
+    password: 'utec',
+    port: 8007, // El puerto por defecto de PostgreSQL
 });
 pool.connect((err, client, release) => {
     if (err) {
